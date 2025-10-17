@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firestore Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <h3>Firebase Firestore Form</h3>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" placeholder="Enter first name">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Enter last name">
+
+        <button id="add" type="button">Add Data</button>
+        <button id="read" type="button">Read Data</button>
+
+        <ul id="readList"></ul>
+    </form>
+
+
+    <script type="module" src="firebaseConfig.js"></script>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>

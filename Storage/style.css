@@ -1,0 +1,180 @@
+/* ===== Base & Layout ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* ===== Upload Section ===== */
+.upload-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+#uploadImg {
+  display: inline-block;
+  padding: 10px;
+  border: 2px dashed #aaa;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#uploadImg:hover {
+  border-color: #4a90e2;
+  background-color: #f0f6ff;
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 10px 20px;
+  background: #4a90e2;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #357ab7;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ===== Uploaded Link ===== */
+#link {
+  margin-top: 15px;
+  color: #0073e6;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+/* ===== List Section ===== */
+.list-section {
+  margin-top: 30px;
+}
+
+#list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  justify-items: center;
+}
+
+/* ===== Individual Item (Card) ===== */
+#list li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* ===== Image Styling ===== */
+#list img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+#list img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== File Link ===== */
+#list a {
+  display: block;
+  color: #0073e6;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 6px;
+  word-break: break-word;
+}
+
+#list a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Delete Button ===== */
+.delete-btn {
+  background: #ff4d4d;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #e04343;
+  transform: translateY(-1px);
+}
+
+.delete-btn:active {
+  transform: translateY(0);
+}
+
+/* ===== Responsive Tweaks ===== */
+@media (max-width: 480px) {
+  .container {
+    margin: 30px 10px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  #uploadImg {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

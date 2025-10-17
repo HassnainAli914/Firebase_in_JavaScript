@@ -1,0 +1,83 @@
+/* Reset some default spacing */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #66a6ff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button {
+    background: #66a6ff;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    margin: 0.3rem;
+}
+
+button:hover {
+    background: #89f7fe;
+    color: #000;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+ul#readList {
+    margin-top: 1rem;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul#readList li {
+    background: rgba(255, 255, 255, 0.15);
+    margin: 0.3rem 0;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+}
